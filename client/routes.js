@@ -1,0 +1,95 @@
+import { _meteorAngular } from 'meteor/angular';
+import _ from 'underscore';
+
+angular
+    .module('productify')
+    .config(config)
+
+function config($stateProvider, $urlRouterProvider) {
+
+  $stateProvider
+
+  .state('app', {
+    url: '/app',
+    abstract: true,
+    templateUrl: 'client/ui/menu.html',
+    controller: 'MenuCtrl as vm'
+  })
+
+  .state('app.home', {
+    url: '/home',
+    views: {
+      'menuContent@app': {
+        templateUrl: 'client/templates/home/home.html',
+        controller: 'HomeCtrl as vm',
+      }
+    }
+  })
+
+  .state('app.instructors', {
+    url: '/home/instructors',
+    views: {
+      'menuContent@app': {
+        templateUrl: 'client/templates/instructor_index/instructors.html',
+        controller: 'InstructCtrl as vm'
+      }
+    }
+  })
+
+  .state('app.mysubscriptions', {
+    url: '/home/my-subscriptions',
+    views: {
+      'menuContent@app': {
+        templateUrl: 'client/templates/instructor_index/instructors.html',
+        controller: 'MySubCtrl as vm'
+      }
+    }
+  })
+
+  .state('app.profile', {
+    cache: false,
+    url: '/home/instructors/profile',
+    views: {
+      'menuContent@app': {
+        templateUrl: 'client/templates/profile_page/profile_page.html',
+        controller: 'ProfileCtrl as vm'
+      }
+    }
+  })
+
+  .state('app.chat', {
+    cache: false,
+    url: '/home/instructors/profile/chat',
+    views: {
+      'menuContent@app': {
+        templateUrl: 'client/templates/chat/chat.html',
+        controller: 'ChatCtrl as msg'
+      }
+    }
+  })
+
+  .state('app.session', {
+    cache: false,
+    url: '/home/instructors/profile/session',
+    views: {
+      'menuContent@app': {
+        templateUrl: 'client/templates/session_room/session_room.html',
+        controller: 'SessionCtrl as msg'
+      }
+    }
+  })
+
+  $urlRouterProvider.otherwise('/app/home');
+};
+
+
+//function loadspinner($rootScope, $ionicLoading) {
+//    $rootScope.$on('loadspinner', function() {
+//        $ionicLoading.show({
+//            template: '<ion-spinner class="spinner-light" icon="spiral"></ion-spinner>',
+//            noBackdrop: true
+//        })
+//    });
+//    $rootScope.$on('$viewContentLoading', function(event){
+//        $rootScope.$broadcast('loadspinner');
+//    });
