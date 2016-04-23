@@ -33,7 +33,7 @@ function ProfileCtrl (
 
       console.log(sessionRm);
 
-      sessionRms.insert(sessionRm, function(err, id) {
+      SessionRms.insert(sessionRm, function(err, id) {
         if (!err) {
           $state.go('app.session', { sessionId: id });
         }

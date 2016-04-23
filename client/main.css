@@ -2,3 +2,41 @@
 .chat {
     width: 65px;
 }
+
+.catego {
+
+  height: 100px;
+  width: 100px;
+
+
+}
+
+.categotitle {
+  font-size: small;
+  font-family: serif;
+  text-align: center;
+
+}
+
+a {
+    text-decoration: none !important;
+}
+/* unvisited link */
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: green;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}

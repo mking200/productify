@@ -1,11 +1,11 @@
 <ion-view view-title="Home">
   <ion-content>
     <h4>Select a Category:</h4>
-    <div class="row" style="flex-wrap: wrap;">
-      <div class="col" ng-repeat="category in vm.categories">
-        <a class="catego" ui-sref="app.instructors({ categoryId: category._id })">
-        <!--<img ng-src={{category.image}}> -->
-        <h2>{{category.name}}</h2>
+    <div class="row" style="flex-wrap:wrap; justify-content:center align-content:center">
+      <div class="col" style="text-align:center" ng-repeat="category in vm.categories">
+        <a ui-sref="app.instructors({ categoryId: category._id })">
+        <img ng-src={{category.image}} class='catego'>
+        <p class="categotitle">{{category.name}}</p>
         </a>
       </div>
     </div>

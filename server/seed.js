@@ -5,31 +5,31 @@ if ( Categories.find().count() === 0 ) {
   let categories = [
     {
       name: 'Behavioral Therapists',
-      image: 'images/sped_therapist.jpeg'
+      image: 'images/BTherapist.png'
     },
     {
       name: 'Gym Instructors',
-      image: 'images/gym.jpeg'
+      image: 'images/gyminstructor.png'
     },
     {
       name: 'Music Tutors',
-      image: 'images/music.jpeg'
+      image: 'images/musictutor.png'
     },
     {
       name: 'Nutritionists',
-      image: 'images/nutritionist.jpg'
+      image: 'images/dietitian.png'
     },
     {
       name: 'Physical Therapists',
-      image: 'images/pt.jpeg'
+      image: 'images/PTherapist.png'
     },
     {
       name: 'Academic Tutor',
-      image: 'images/tutor.jpg'
+      image: 'images/tutor.png'
     },
     {
       name: 'Yoga Instructor',
-      image: 'images/yoga.jpg'
+      image: 'images/yoga.png'
     }
   ]
   categories.forEach(function(category) {
