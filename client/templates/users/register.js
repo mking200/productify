@@ -16,12 +16,7 @@ function SignUpCtrl (
 
     this.autorun( () => {
       if( Meteor.loggingIn() === true ) {
-        let newClient = {
-          meteorId: Meteor.userId(),
-          name: Meteor.users.username,
-          profileImg: 'image/profile.jpg'
-        }
-        Clients.insert(newClient, function(err) {
+        Meteor.call('addUser', function(err){
           if (!err) {
             $state.go('app.home');
           } else {
