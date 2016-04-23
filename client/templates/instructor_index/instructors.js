@@ -8,7 +8,8 @@ angular
 function InstructCtrl (
                     $scope,
                     $reactive,
-                    $state
+                    $state,
+                    $stateParams
                   ) {
     $reactive(this).attach($scope);
     var self = this;
@@ -45,5 +46,9 @@ function InstructCtrl (
         "skills": ["Vinyasa", "Hot Yoga"]}
       ]
 
+
+    this.helpers({
+      instructors: () => Instructors.find({ categoryId: $stateParams.categoryId })
+    });
 
 };
