@@ -37,7 +37,7 @@ function config($stateProvider, $urlRouterProvider) {
   })
 
   .state('app.mysubscriptions', {
-    url: '/home/my-subscriptions',
+    url: '/my-subscriptions',
     views: {
       'menuContent@app': {
         templateUrl: 'client/templates/my_subscriptions/my_subscriptions.html',
