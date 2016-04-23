@@ -2,8 +2,6 @@
   <ion-content>
     <h4>Select a Category:</h4>
     <div class="row" style="flex-wrap: wrap;">
-
-
       <div class="col" ng-repeat="category in vm.categories">
         <a class="catego" ui-sref="app.instructors({ categoryId: category._id })">
         <!--<img ng-src={{category.image}}> -->
@@ -11,7 +9,6 @@
         </a>
       </div>
     </div>
-
 
   </ion-content>
 </ion-view>

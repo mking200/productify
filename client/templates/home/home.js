@@ -8,7 +8,9 @@ angular
 function HomeCtrl (
                     $scope,
                     $reactive,
-                    $state
+                    $state,
+                    $ionicHistory,
+                    $ionicViewSwitcher
                   ) {
     $reactive(this).attach($scope);
     var self = this;
@@ -38,5 +40,10 @@ function HomeCtrl (
 
     this.helpers({
       categories: () => Categories.find({}),
+    });
+
+    $scope.$on('$ionicView.beforeEnter', function (event, viewData) {
+      viewData.enableBack = false;
+      $ionicHistory.clearHistory();
     });
 };
