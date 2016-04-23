@@ -36,7 +36,6 @@ function HomeCtrl (
       }
     ];
 
-  };
     this.helpers({
       categories: () => Categories.find({}),
     });
