@@ -1,5 +1,13 @@
 <ion-view view-title="Home">
   <ion-content>
-    <h1>Home</h1>
+    <h4>Select a Category:</h4>
+    <div class="row" style="flex-wrap: wrap;">
+      <div class="col" ng-repeat="category in categories">
+        <img src={{category.profileImg}}>
+        <h2>{{category.title}}</h2>
+      </div>
+    </div>
+
+
   </ion-content>
 </ion-view>
