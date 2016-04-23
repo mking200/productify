@@ -40,7 +40,7 @@ function config($stateProvider, $urlRouterProvider) {
     url: '/home/my-subscriptions',
     views: {
       'menuContent@app': {
-        templateUrl: 'client/templates/instructor_index/instructors.html',
+        templateUrl: 'client/templates/my_subscriptions/my_subscriptions.html',
         controller: 'MySubCtrl as vm'
       }
     }

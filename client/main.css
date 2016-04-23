@@ -1,5 +1,4 @@
 /* CSS declarations go here */
-.gallery {
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
+.chat {
+    width: 65px;
 }
