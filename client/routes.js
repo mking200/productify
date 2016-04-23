@@ -27,7 +27,7 @@ function config($stateProvider, $urlRouterProvider) {
   })
 
   .state('app.instructors', {
-    url: '/home/instructors',
+    url: '/home/:categoryId',
     views: {
       'menuContent@app': {
         templateUrl: 'client/templates/instructor_index/instructors.html',
@@ -48,7 +48,7 @@ function config($stateProvider, $urlRouterProvider) {
 
   .state('app.profile', {
     cache: false,
-    url: '/home/instructors/profile',
+    url: '/home/instructors/:instructorId',
     views: {
       'menuContent@app': {
         templateUrl: 'client/templates/profile_page/profile_page.html',

@@ -13,4 +13,8 @@ function ProfileCtrl (
     $reactive(this).attach($scope);
     var self = this;
 
+    this.helpers({
+      instructor: () => Instructors.findOne({ _id: $stateParams.instructorId }),
+
+    });
 };

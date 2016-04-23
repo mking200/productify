@@ -13,4 +13,8 @@ function HomeCtrl (
     $reactive(this).attach($scope);
     var self = this;
 
+    this.helpers({
+      categories: () => Categories.find({}),
+    });
+
 };

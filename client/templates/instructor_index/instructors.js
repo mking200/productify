@@ -8,9 +8,14 @@ angular
 function InstructCtrl (
                     $scope,
                     $reactive,
-                    $state
+                    $state,
+                    $stateParams
                   ) {
     $reactive(this).attach($scope);
     var self = this;
+
+    this.helpers({
+      instructors: () => Instructors.find({ categoryId: $stateParams.categoryId })
+    });
 
 };
