@@ -15,17 +15,23 @@ function MySubCtrl (
     self.myInstructors = [];
 
     this.autorun( () => {
-      if (self.getCollectionReactively('mySessions') ) {
-        console.log(self.mySessions.length);
+      if ( self.getCollectionReactively('mySessions') ) {
+        let newSubscriptions = [];
         for (let i = 0; i < self.mySessions.length; i++) {
-          self.myInstructors.push(self.mySessions[i].instructorId);
+          newSubscriptions.push(self.mySessions[i].instructorId);
         }
+        self.myInstructors = newSubscriptions;
       }
     });
 
     this.helpers({
-      mySessions: () => SessionRms.find({ clientId: Meteor.userId() }),
+      client: () => Clients.findOne({ meteorId: Meteor.userId() }),
+      mySessions: () => SessionRms.find({ clientId: self.client._id }),
       instructors: () => Instructors.find({ _id: { $in: self.getReactively('myInstructors') } })
     });
+
+    for (let i = 0; i < self.mySessions.length; i++) {
+      self.myInstructors.push(self.mySessions[i].instructorId);
+    }
 
 };
