@@ -1,16 +1,16 @@
 <ion-view view-title="Messages">
   <ion-content>
-    <div ng-repeat="message in messages" ng-class="{other: message.own != true}" class="messages">
+    <div ng-repeat="message in vm.messages" ng-class="{other: message.for !== vm.client._id}" class="messages">
       <div class="message">
-          <span class="message">{{message.text}}</span>
+          <span class="message" ng-init="vm.showMsg($last)">{{message.text}}</span>
       </div>
     </div>
   </ion-content>
   <ion-footer-bar keyboard-attach class="bar-stable item-input-inset">
     <label class="item-input-wrapper">
-      <input type="text" placeholder="Type your message" on-return="sendMessage(); closeKeyboard()" ng-model="data.message" on-focus="inputUp()" on-blur="inputDown()" />
+      <input type="text" placeholder="Type your message" on-return="sendMessage(); closeKeyboard()" ng-model="vm.msg" on-focus="inputUp()" on-blur="inputDown()" />
     </label>
-    <button class="button button-clear" ng-click="sendMessage()">
+    <button class="button button-clear" ng-click="vm.sendMessage()">
       Send
     </button>
   </ion-footer-bar>

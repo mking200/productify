@@ -13,4 +13,13 @@ function MenuCtrl (
     $reactive(this).attach($scope);
     var self = this;
 
+    this.helpers({
+      currentUser: () => Meteor.userId(),
+    });
+
+    this.logout = function(){
+      Meteor.logout();
+    }
+
+
 };

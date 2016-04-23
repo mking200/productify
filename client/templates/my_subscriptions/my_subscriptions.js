@@ -34,4 +34,9 @@ function MySubCtrl (
       self.myInstructors.push(self.mySessions[i].instructorId);
     }
 
+    this.toSession = function(id){
+      let session = SessionRms.findOne({ instructorId: id, clientId: self.client._id })
+      $state.go('app.session', { sessionId: session._id });
+    }
+
 };

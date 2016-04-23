@@ -19,27 +19,29 @@ function ProfileCtrl (
       client: () => Clients.findOne({ meteorId: Meteor.userId() })
     });
 
+    this.contact = function() {
+      Meteor.call('setMessages', self.client._id, self.instructor._id, function(err){
+        if (!err) {
+          $state.go('app.messages', { instructorId: self.instructor._id });
+        }
+      })
+    }
 
     this.zubscribe = function(){
-
-      console.log(self.instructor);
-      console.log(self.client);
-
       var sessionRm = {
         instructorId: self.instructor._id,
         clientId: self.client._id,
         paid: true
       }
-
-      console.log(sessionRm);
-
       SessionRms.insert(sessionRm, function(err, id) {
         if (!err) {
-          $state.go('app.session', { sessionId: id });
+          Meteor.call('setTasks', id, function(err){
+            if(!err) {
+              $state.go('app.session', { sessionId: id });
+            }
+          });
         }
       })
-
-
     };
 
 

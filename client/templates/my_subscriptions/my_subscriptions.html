@@ -2,7 +2,7 @@
   <ion-content>
     Subscriptions
 
-    <div class="list" ng-repeat="instructor in vm.instructors">
+    <div class="list" ng-repeat="instructor in vm.instructors" ng-click="vm.toSession(instructor._id)">
 
       <a class="item item-avatar">
         <img ng-src={{instructor.profileImg}}>
