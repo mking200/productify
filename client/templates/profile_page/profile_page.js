@@ -8,7 +8,8 @@ angular
 function ProfileCtrl (
                     $scope,
                     $reactive,
-                    $state
+                    $state,
+                    $stateParams
                   ) {
     $reactive(this).attach($scope);
     var self = this;
