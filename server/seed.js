@@ -42,7 +42,7 @@ if ( Categories.find().count() === 0 ) {
         var instructors = [
           {
             categoryId: category._id,
-            profileImg: 'images/profile.jpg',
+            profileImg: 'images/instructors/ashley.png',
             name: 'Marietta Roces',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             rating: '4',
@@ -50,7 +50,7 @@ if ( Categories.find().count() === 0 ) {
           },
           {
             categoryId: category._id,
-            profileImg: 'images/profile.jpg',
+            profileImg: 'images/instructors/alec.png',
             name: 'Toni Recto',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             rating: '5',
@@ -58,7 +58,7 @@ if ( Categories.find().count() === 0 ) {
           },
           {
             categoryId: category._id,
-            profileImg: 'images/profile.jpg',
+            profileImg: 'images/instructors/arjay.png',
             name: 'Ester Orante',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             rating: '4',
@@ -66,7 +66,7 @@ if ( Categories.find().count() === 0 ) {
           },
           {
             categoryId: category._id,
-            profileImg: 'images/profile.jpg',
+            profileImg: 'images/instructors/cheene.png',
             name: 'Earlina Custodio',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             rating: '4',
@@ -74,7 +74,7 @@ if ( Categories.find().count() === 0 ) {
           },
           {
             categoryId: category._id,
-            profileImg: 'images/profile.jpg',
+            profileImg: 'images/instructors/christian.png',
             name: 'Hugh Torres',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             rating: '5',
@@ -82,7 +82,7 @@ if ( Categories.find().count() === 0 ) {
           },
           {
             categoryId: category._id,
-            profileImg: 'images/profile.jpg',
+            profileImg: 'images/instructors/jin.png',
             name: 'Brenda Europa',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             rating: '4',
@@ -97,7 +97,7 @@ if ( Categories.find().count() === 0 ) {
         var instructors = [
           {
             categoryId: category._id,
-            profileImg: 'images/profile.jpg',
+            profileImg: 'images/instructors/darren.png',
             name: 'Bernard Jardenil',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             rating: '5',
@@ -105,7 +105,7 @@ if ( Categories.find().count() === 0 ) {
           },
           {
             categoryId: category._id,
-            profileImg: 'images/profile.jpg',
+            profileImg: 'images/instructors/phia.png',
             name: 'Madalena Cantillo',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             rating: '4',
@@ -113,7 +113,7 @@ if ( Categories.find().count() === 0 ) {
           },
           {
             categoryId: category._id,
-            profileImg: 'images/profile.jpg',
+            profileImg: 'images/instructors/ashley.png',
             name: 'Barbara Jardenil',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             rating: '4',
@@ -121,7 +121,7 @@ if ( Categories.find().count() === 0 ) {
           },
           {
             categoryId: category._id,
-            profileImg: 'images/profile.jpg',
+            profileImg: 'images/jin.jpg',
             name: 'Rosario Dulce',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             rating: '5',
@@ -129,7 +129,7 @@ if ( Categories.find().count() === 0 ) {
           },
           {
             categoryId: category._id,
-            profileImg: 'images/profile.jpg',
+            profileImg: 'images/instructors/gab.png',
             name: 'Declan Parker',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             rating: '4',

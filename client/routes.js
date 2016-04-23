@@ -79,6 +79,17 @@ function config($stateProvider, $urlRouterProvider) {
     }
   })
 
+  .state('app.messages', {
+    cache: false,
+    url: '/home/instructors/:instructorId/messages',
+    views: {
+      'menuContent@app': {
+        templateUrl: 'client/templates/messaging/messages.html',
+        controller: 'MessageCtrl as vm'
+      }
+    }
+  })
+
   .state('app.login', {
     cache: false,
     url: '/login',
