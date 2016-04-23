@@ -14,17 +14,17 @@ function MySubCtrl (
     var self = this;
     self.myInstructors = [];
 
-    // this.autorun( () => {
-    //   if ( self.getCollectionReactively('mySessions') ) {
-    //     for (let i = 0; i < self.mySessions.length; i++) {
-    //       self.myInstructors.push(self.mySessions[i]._id)
-    //     }
-    //   }
-    // });
+    this.autorun( () => {
+      if (self.getCollectionReactively('mySessions') ) {
+        for (let i = 0; i < self.mySessions.length; i++) {
+          self.myInstructors.push(self.mySessions[i]._id)
+        }
+      }
+    });
 
     this.helpers({
       mySessions: () => SessionRms.find({clientId: Meteor.userId()}),
-      //instructors: () => Instructors.find({ _id: { $in: self.getReactively('myInstructors') } })
+      instructors: () => Instructors.find({ _id: { $in: self.getReactively('myInstructors') } })
     });
 
 };

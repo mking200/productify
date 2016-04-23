@@ -1,33 +1,6 @@
 <ion-view view-title="Profile">
   <ion-content>
 
-    <div class="row">
-      <div class="col">
-        <img ng-src={{vm.instructor.profileImg}}>
-      </div>
-      <div class="col">
-        <h2>{{vm.instructor.name}}</h2>
-        <p>{{vm.instructor.description}}</p>
-      </div>
-      <div class="col">
-        <button class="button button-small button-assertive">
-          Subscribe
-        </button>
-      <br>
-      <button class="button button-small button-positive chat">
-        Chat
-      </button>
-      </div>
-    </div>
-<br>
-    <div class='skill'>
-      <h2>Skills:</h2>
-      <div ng-repeat="skill in vm.instructor.skills">
-        {{skill}}
-      </div>
-    </div>
-
-
     <div class="list card">
 
       <div class="item item-avatar">
@@ -37,7 +10,7 @@
             <h2>{{vm.instructor.name}}</h2>
           </div>
           <div class="col">
-            <button class="button button-small button-assertive">
+            <button class="button button-small button-assertive" ng-click="vm.zubscribe()">
               Subscribe
             </button>
           <br>
@@ -50,7 +23,7 @@
       <div class="item item-body">
 
         <p>{{vm.instructor.description}}</p>
-
+<br>
             <div class='skill'>
               <h2>Skills:</h2>
               <div ng-repeat="skill in vm.instructor.skills">

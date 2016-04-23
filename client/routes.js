@@ -70,7 +70,7 @@ function config($stateProvider, $urlRouterProvider) {
 
   .state('app.session', {
     cache: false,
-    url: '/home/instructors/profile/session',
+    url: '/home/instructors/profile/:sessionId',
     views: {
       'menuContent@app': {
         templateUrl: 'client/templates/session_room/session_room.html',
