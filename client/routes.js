@@ -63,7 +63,7 @@ function config($stateProvider, $urlRouterProvider) {
     views: {
       'menuContent@app': {
         templateUrl: 'client/templates/chat/chat.html',
-        controller: 'ChatCtrl as msg'
+        controller: 'ChatCtrl as vm'
       }
     }
   })
@@ -74,7 +74,29 @@ function config($stateProvider, $urlRouterProvider) {
     views: {
       'menuContent@app': {
         templateUrl: 'client/templates/session_room/session_room.html',
-        controller: 'SessionCtrl as msg'
+        controller: 'SessionCtrl as vm'
+      }
+    }
+  })
+
+  .state('app.login', {
+    cache: false,
+    url: '/login',
+    views: {
+      'menuContent@app': {
+        templateUrl: 'client/templates/users/login.html',
+        controller: 'LoginCtrl as vm'
+      }
+    }
+  })
+
+  .state('app.register', {
+    cache: false,
+    url: '/register',
+    views: {
+      'menuContent@app': {
+        templateUrl: 'client/templates/users/register.html',
+        controller: 'SignUpCtrl as vm'
       }
     }
   })
