@@ -1,16 +1,13 @@
-<ion-view view-title="Instructors">
+<ion-view view-title="Subscriptions">
   <ion-content>
-    <h1>Instructors</h1>
 
-
-    <div class="list" ng-repeat="instructor in vm.instructors">
+    <div class="list" ng-repeat="instructor in instructors">
 
       <a class="item item-avatar">
         <img ng-src={{instructor.profileImg}}>
         <h2>{{instructor.name}}</h2>
         <p>{{instructor.description}}</p>
       </a>
-
 
     </div>
 
