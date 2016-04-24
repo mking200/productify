@@ -21,11 +21,14 @@ Meteor.methods({
       postDate: new Date(),
       published: true
     }
+    
     let hasTasks = TaskGroups.find({ sessionId: thisSession._id }).fetch();
+    
     if ( hasTasks.length === 0 ) {
       TaskGroups.insert( taskGroup, function(err, id){
         if (!err){
-          if ( category.name === 'Behavioral Therapists' ) {
+          
+          if (category.name === 'Behavioral Therapists') {
             var tasks = [
               {
                 taskgroupId: id,
@@ -90,6 +93,55 @@ Meteor.methods({
                 needUpdate: true,
                 isDone: false
               },
+            ]
+            tasks.forEach(function(task){
+              Tasks.insert(task);
+            })
+          }
+          else if (category.name === 'Yoga Instructor') {
+            var tasks = [
+              {
+                taskgroupId: id,
+                details: 'Drink 4 litres of water',
+                notes: '',
+                needUpdate: true,
+                isDone: false
+              },
+              {
+                taskgroupId: id,
+                details: 'Take 10 deep breaths.',
+                notes: '',
+                needUpdate: true,
+                isDone: false
+              },
+              {
+                taskgroupId: id,
+                details: 'Meditate for 15mins.',
+                notes: '',
+                needUpdate: true,
+                isDone: false
+              },
+              {
+                taskgroupId: id,
+                details: "Child's Pose. 2mins",
+                notes: '',
+                needUpdate: true,
+                isDone: false
+              },
+              {
+                taskgroupId: id,
+                details: 'Warrior Pose. 5mins',
+                notes: '',
+                needUpdate: true,
+                isDone: false
+              },
+              {
+                taskgroupId: id,
+                details: 'Put your hands together and focus',
+                notes: '',
+                needUpdate: true,
+                isDone: false
+              }
             ]
             tasks.forEach(function(task){
               Tasks.insert(task);

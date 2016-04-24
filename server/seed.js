@@ -4,7 +4,7 @@ if ( Categories.find().count() === 0 ) {
 
   let categories = [
     {
-      name: 'Behavioral Therapist',
+      name: 'Behavioral Therapists',
       image: 'images/BTherapist.png'
     },
     {
