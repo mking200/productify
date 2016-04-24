@@ -1,17 +1,19 @@
 <ion-view view-title="Profile">
   <ion-content>
 
+
+  <ion-card>
+
     <div class="list card">
-
       <div class="item">
-
-      <div style="text-align: center">
+      <div class="row">
+      <div class="col-25">
+        <img item-avatar src="{{vm.instructor.profileImg}}">
+      </div>
+      <div class="col-50">
         <h2>{{vm.instructor.name}}</h2>
       </div>
-      <div style="text-align: center">
-        <img style="max-width:200px" src="{{vm.instructor.profileImg}}">
-      </div>
-      <div style="text-align: center">
+      <div class="col-25">
         <button class="button button-small button-assertive" ng-click="vm.zubscribe()">
           Subscribe
         </button>
@@ -19,7 +21,7 @@
           Contact
         </button>
       </div>
-
+      </div>
       <br>
 
       <div class="item item-body">
@@ -39,7 +41,7 @@
 
   </div>
 
-
+  </ion-card>
 
 
   </ion-content>

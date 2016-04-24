@@ -137,3 +137,14 @@ span.message {
   text-overflow: ellipsis!important;
   white-space: normal!important;
 }
+
+.briefdesc {
+    text-overflow: ellipsis; /* will make [...] at the end */
+    width: auto; /* change to your preferences */
+    height: 20px;
+    white-space: nowrap; /* paragraph to one line */
+    overflow:hidden; /* older browsers */
+    }
+
+
+
