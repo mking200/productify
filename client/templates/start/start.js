@@ -15,8 +15,4 @@ function StartCtrl (
     $reactive(this).attach($scope);
     var self = this;
 
-    this.startApp = function() {
-      return;
-    }
-
 };
