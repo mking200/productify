@@ -16,6 +16,16 @@ function config($stateProvider, $urlRouterProvider) {
     controller: 'MenuCtrl as vm'
   })
 
+  .state('app.start', {
+    url: '/start',
+    views: {
+      'menuContent@app': {
+        templateUrl: 'client/templates/start/start.html',
+        controller: 'StartCtrl as vm',
+      }
+    }
+  })
+
   .state('app.home', {
     url: '/home',
     views: {
@@ -123,7 +133,7 @@ function config($stateProvider, $urlRouterProvider) {
     }
   })
 
-  $urlRouterProvider.otherwise('/app/home');
+  $urlRouterProvider.otherwise('/app/start');
 };
 
 
