@@ -1,48 +1,46 @@
 <ion-view view-title="Profile">
   <ion-content>
+    <ion-card>
+      <div class="list card">
+        <ion-item>
 
-
-  <ion-card>
-
-    <div class="list card">
-      <div class="item">
-      <div class="row">
-      <div class="col-25">
-        <img item-avatar src="{{vm.instructor.profileImg}}">
-      </div>
-      <div class="col-50">
-        <h2>{{vm.instructor.name}}</h2>
-      </div>
-      <div class="col-25">
-        <button class="button button-small button-assertive" ng-click="vm.zubscribe()">
-          Subscribe
-        </button>
-        <button class="button button-small button-positive chat" ng-click="vm.contact()">
-          Contact
-        </button>
-      </div>
-      </div>
-      <br>
-
-      <div class="item item-body">
-
-        <p>{{vm.instructor.description}}</p>
-        <br>
-            <div class='skill'>
-              <h2>Skills:</h2>
-              <div ng-repeat="skill in vm.instructor.skills">
-                {{skill}}
-              </div>
+          <div class="item cardpic">  
+            <div>
+              <h2>{{vm.instructor.name}}</h2>
             </div>
 
+            <div style="text-align: center">
+            <br>
+              <img class='rounded' style="max-width:200px" src="{{vm.instructor.profileImg}}">
+            </div>
+
+            <br>
+            <div style="text-align: center">
+              <button class="button button-small button-assertive" ng-click="vm.zubscribe()">
+                Subscribe
+              </button>
+              <button class="button button-small button-positive chat" ng-click="vm.contact()">
+                Contact
+              </button>
+            </div>
+          </div>
+
+        </ion-item>
+
+        <br>
+
+        <div class="item item-body">
+
+          <p>{{vm.instructor.description}}</p>
+          <br>
+              <div class='skill'>
+                <h2>Skills:</h2>
+                <div ng-repeat="skill in vm.instructor.skills">
+                  {{skill}}
+                </div>
+              </div>
+        </div>
       </div>
-
-    </div>
-
-  </div>
-
-  </ion-card>
-
-
+    </ion-card>
   </ion-content>
 </ion-view>

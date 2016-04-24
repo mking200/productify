@@ -172,5 +172,13 @@ span.message {
     overflow:hidden; /* older browsers */
     }
 
+.cardpic {
 
+  text-align: center
+
+}
+
+.rounded {
+  border-radius: 20%;
+}
 
