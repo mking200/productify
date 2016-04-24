@@ -3,24 +3,24 @@
 
     <div class="list card">
 
-      <div class="item item-avatar">
-        <div class="row">
-          <div class="col-25">
-            <img src="mcfly.jpg">
-          </div>
-          <div class="col-50">
-            <h2>{{vm.instructor.name}}</h2>
-          </div>
-          <div class="col-25">
-            <button class="button button-small button-assertive" ng-click="vm.zubscribe()">
-              Subscribe
-            </button>
-          <br>
-            <button class="button button-small button-positive chat" ng-click="vm.contact()">
-              Contact
-            </button>
-          </div>
-        </div>
+      <div class="item">
+
+      <div style="text-align: center">
+        <h2>{{vm.instructor.name}}</h2>
+      </div>
+      <div style="text-align: center">
+        <img style="max-width:200px" src="{{vm.instructor.profileImg}}">
+      </div>
+      <div style="text-align: center">
+        <button class="button button-small button-assertive" ng-click="vm.zubscribe()">
+          Subscribe
+        </button>
+        <button class="button button-small button-positive chat" ng-click="vm.contact()">
+          Contact
+        </button>
+      </div>
+
+      <br>
 
       <div class="item item-body">
 
