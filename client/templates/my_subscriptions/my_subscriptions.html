@@ -1,13 +1,11 @@
-<ion-view view-title="Subscriptions">
+<ion-view view-title="Your Subscriptions">
   <ion-content>
-    Subscriptions
-
     <div class="list" ng-repeat="instructor in vm.instructors" ng-click="vm.toSession(instructor._id)">
-
+      <h3 style="padding-left: 5%">Action Plan {{$index + 1}}</h3>
       <a class="item item-avatar">
         <img ng-src={{instructor.profileImg}}>
         <h2>{{instructor.name}}</h2>
-        <p>{{instructor.description}}</p>
+        <p>{{ vm.category( instructor.categoryId ).name }} </p>
       </a>
 
     </div>

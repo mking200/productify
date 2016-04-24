@@ -27,7 +27,7 @@ function SessionCtrl (
         if ( isDone === true ) {
           var myPopup = $ionicPopup.show({
             template: '<input type="text" ng-model="vm.myUpdate" autofocus>',
-            title: 'Which items are difficult for him?',
+            title: 'Which items are difficult for them?',
             scope: $scope,
             buttons: [{
               text: '<b>None</b>'

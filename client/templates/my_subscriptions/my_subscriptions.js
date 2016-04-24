@@ -39,4 +39,9 @@ function MySubCtrl (
       $state.go('app.session', { sessionId: session._id });
     }
 
+
+    this.category = function(categoryId) {
+      return Categories.findOne({ _id: categoryId });
+    }
+
 };

@@ -4,23 +4,23 @@ if ( Categories.find().count() === 0 ) {
 
   let categories = [
     {
-      name: 'Behavioral Therapists',
+      name: 'Behavioral Therapist',
       image: 'images/BTherapist.png'
     },
     {
-      name: 'Gym Instructors',
+      name: 'Gym Instructor',
       image: 'images/gyminstructor.png'
     },
     {
-      name: 'Music Tutors',
+      name: 'Music Tutor',
       image: 'images/musictutor.png'
     },
     {
-      name: 'Nutritionists',
+      name: 'Nutritionist',
       image: 'images/dietitian.png'
     },
     {
-      name: 'Physical Therapists',
+      name: 'Physical Therapist',
       image: 'images/PTherapist.png'
     },
     {

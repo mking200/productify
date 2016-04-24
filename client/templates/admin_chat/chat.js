@@ -26,7 +26,9 @@ function ChatCtrl (
     });
 
     this.sendMessage = function() {
-      if(self.message) {
+      console.log(self.message);
+      console.log('click!')
+      if(self.message) {        
         self.instructor.forEach(function(ins){
           let newMessage = {
             text: self.message,
