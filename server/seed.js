@@ -121,7 +121,7 @@ if ( Categories.find().count() === 0 ) {
           },
           {
             categoryId: category._id,
-            profileImg: 'images/jin.jpg',
+            profileImg: 'images/instructors/jin.png',
             name: 'Rosario Dulce',
             description: "Rosario's yoga practice began in 2003 with Vaccasin, at his yoga centre in Bristol. Rosario initially turned to yoga to help a rotator cuff injury and was greatly inspired by the healing transformation that took place in her body as her yoga practice deepened.",
             rating: '5',

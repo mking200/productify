@@ -1,4 +1,30 @@
 /* CSS declarations go here */
+.bar.bar-positive {
+    
+    background-color: #329e87;
+    background-image: linear-gradient(0deg, #329e87, #329e87 50%, transparent 50%);
+    color: #fff;
+}
+
+.button.button-small.button-positive.chat{
+  background-color:#fff ;
+  border-color:#3cbca0 ;
+  color:#3cbca0;
+}
+
+.button.button-small.button-assertive{
+  background-color: #3cbca0;
+  color:#fff;
+}
+
+.at-btn.button.button-positive.button-block.submit{
+  background-color: #3cbca0;
+}
+
+.button.button-block.button-clear.button-positive{
+  color:#3cbca0;
+}
+
 .chat {
     width: 65px;
 }
