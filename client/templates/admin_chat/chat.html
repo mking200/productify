@@ -8,9 +8,9 @@
   </ion-content>
   <form ng-submit="vm.sendMessage()">
   <ion-footer-bar keyboard-attach class="bar-stable item-input-inset">
-    <label class="item-input-wrapper">
-      <input type="text" placeholder="Type your message" on-return="vm.sendMessage()" ng-model="vm.msg" on-focus="inputUp()" on-blur="inputDown()" />
-    </label>
+      <label class="item-input-wrapper">
+        <input type="text" placeholder="Type your message" on-return="vm.sendMessage()" ng-model="vm.message" on-focus="inputUp()" on-blur="inputDown()" />
+      </label>
     <button class="button button-clear" ng-click="vm.sendMessage()">
       Send
     </button>

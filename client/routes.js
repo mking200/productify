@@ -57,17 +57,6 @@ function config($stateProvider, $urlRouterProvider) {
     }
   })
 
-  .state('app.chat', {
-    cache: false,
-    url: '/home/instructors/profile/chat',
-    views: {
-      'menuContent@app': {
-        templateUrl: 'client/templates/chat/chat.html',
-        controller: 'ChatCtrl as vm'
-      }
-    }
-  })
-
   .state('app.session', {
     cache: false,
     url: '/home/instructors/profile/:sessionId',
@@ -86,6 +75,28 @@ function config($stateProvider, $urlRouterProvider) {
       'menuContent@app': {
         templateUrl: 'client/templates/messaging/messages.html',
         controller: 'MessageCtrl as vm'
+      }
+    }
+  })
+
+  .state('app.chatlist', {
+    cache: false,
+    url: '/chatlist',
+    views: {
+      'menuContent@app': {
+        templateUrl: 'client/templates/admin_chat/chat_list.html',
+        controller: 'ChatListCtrl as vm'
+      }
+    }
+  })
+
+  .state('app.chat', {
+    cache: false,
+    url: '/chatlist/:clientId',
+    views: {
+      'menuContent@app': {
+        templateUrl: 'client/templates/admin_chat/chat.html',
+        controller: 'ChatCtrl as vm'
       }
     }
   })

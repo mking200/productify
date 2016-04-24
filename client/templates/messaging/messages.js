@@ -33,14 +33,16 @@ function MessageCtrl (
     });
 
     this.sendMessage = function() {
-      let newMessage = {
-        text: self.msg,
-        for: self.instructor._id,
-        by: self.client._id,
-        sent: new Date()
+      if(self.msg) {
+        let newMessage = {
+          text: self.msg,
+          for: self.instructor._id,
+          by: self.client._id,
+          sent: new Date()
+        }
+        Messages.insert(newMessage);
+        self.msg ='';
       }
-      Messages.insert(newMessage);
-      self.msg ='';
     }
 
     this.showMsg = function(isLast) {

@@ -1,0 +1,9 @@
+<ion-view view-title="Chat">
+  <ion-content>
+    <ul class="list">
+      <li class="item" ng-repeat="client in vm.clients" ui-sref='app.chat({ clientId: client._id })'>
+        {{ client.name }}
+      </li>
+    </ul>
+  </ion-content>
+</ion-view>
